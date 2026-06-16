@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Multi-format extraction agent</h1>
+      <p>Upload video, text, or Excel and normalize extracted transaction data, images, and metadata.</p>
+      <div class="hero-actions">
+        <a class="button" href="{{ url_for('upload') }}">Start Upload</a>
+        <a class="button button-light" href="{{ url_for('settings') }}">Azure setup guide</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <img src="{{ url_for('static', filename='images/hero-visual.svg') }}" alt="Data extraction illustration" />
+    </div>
+  </section>
+
+  <section class="cards-grid">
+    <article class="card">
+      <h2>Video analysis</h2>
+      <p>Use Azure Video Indexer / AI Video Analyzer to extract frames, text, and transactions from video source files.</p>
+    </article>
+    <article class="card">
+      <h2>Text parsing</h2>
+      <p>Parse invoices, receipts, or transaction statements with text normalization.</p>
+    </article>
+    <article class="card">
+      <h2>Excel ingestion</h2>
+      <p>Import `.xlsx` data with Pandas and normalize rows into a shared transaction schema.</p>
+    </article>
+  </section>
+{% endblock %}

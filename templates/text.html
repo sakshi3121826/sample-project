@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section>
+    <h1>Text extraction</h1>
+    <p>Send free-form text for transaction and metadata extraction.</p>
+    <form action="{{ url_for('api_process_text') }}" method="post" class="form-card">
+      <label>Transaction text</label>
+      <textarea name="text" rows="12" placeholder="Example:\n2026-06-06 Payment to supplier $152.50\n2026-06-07 Refund received $50.00"></textarea>
+      <button class="button" type="submit">Extract from text</button>
+    </form>
+  </section>
+{% endblock %}

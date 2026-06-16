@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Data extraction illustration">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="48" fill="#eef2ff" />
+  <path d="M150 420C150 340 250 310 340 300C430 290 500 330 560 330C620 330 680 300 680 240" fill="none" stroke="#3b82f6" stroke-width="24" stroke-linecap="round" />
+  <circle cx="220" cy="240" r="50" fill="#ffffff" stroke="#2563eb" stroke-width="14" />
+  <circle cx="540" cy="180" r="62" fill="#ffffff" stroke="#0ea5e9" stroke-width="16" />
+  <rect x="120" y="80" width="250" height="150" rx="30" fill="url(#g)" opacity="0.9" />
+  <rect x="430" y="260" width="280" height="160" rx="28" fill="#ffffff" />
+  <path d="M170 125h180" stroke="#fff" stroke-width="14" stroke-linecap="round" />
+  <path d="M170 175h120" stroke="#fff" stroke-width="14" stroke-linecap="round" />
+  <path d="M170 225h80" stroke="#fff" stroke-width="14" stroke-linecap="round" />
+  <path d="M470 320h120" stroke="#0f172a" stroke-width="12" stroke-linecap="round" />
+  <path d="M470 360h70" stroke="#94a3b8" stroke-width="12" stroke-linecap="round" />
+  <path d="M470 400h90" stroke="#94a3b8" stroke-width="12" stroke-linecap="round" />
+  <circle cx="640" cy="200" r="20" fill="#2563eb" />
+  <circle cx="600" cy="310" r="16" fill="#2563eb" />
+  <circle cx="520" cy="380" r="12" fill="#0ea5e9" />
+</svg>

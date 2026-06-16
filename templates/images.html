@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section>
+    <h1>Image / frame results</h1>
+    {% if frames %}
+      <div class="gallery-grid">
+        {% for frame in frames %}
+          <article class="gallery-card">
+            <div class="frame-preview">Image placeholder</div>
+            <h3>{{ frame.timecode }}</h3>
+            <p>{{ frame.description }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <p>No frame extractions available. Upload a video file first.</p>
+      </div>
+    {% endif %}
+  </section>

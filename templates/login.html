@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="form-card card">
+    <h1>Login</h1>
+    <p>Sign in to manage uploads and view processed results.</p>
+    {% if error %}
+      <div class="error-message">{{ error }}</div>
+    {% endif %}
+    <form action="{{ url_for('login') }}" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+      <button class="button" type="submit">Login</button>
+    </form>
+    <p class="small-text">New here? <a href="{{ url_for('signup') }}">Create an account</a>.</p>
+  </section>
+{% endblock %}

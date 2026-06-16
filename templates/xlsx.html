@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section>
+    <h1>Excel extraction</h1>
+    <p>Upload `.xlsx` or `.xls` data to normalize transaction rows into a common output format.</p>
+    <form action="{{ url_for('api_process_xlsx') }}" method="post" enctype="multipart/form-data" class="form-card">
+      <label>Excel file</label>
+      <input type="file" name="file" accept=".xlsx,.xls" required />
+      <button class="button" type="submit">Upload and process</button>
+    </form>
+    <div class="info-block">
+      <h3>Supported content</h3>
+      <p>Sheets with column headings like <code>Date</code>, <code>Description</code>, <code>Amount</code>, or custom invoice fields will be normalized automatically.</p>
+    </div>
+  </section>
+{% endblock %}

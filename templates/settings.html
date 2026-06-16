@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section>
+    <h1>Settings</h1>
+    <p>Configure Azure keys and endpoints for video, OCR, and document extraction.</p>
+    <div class="settings-grid">
+      <div class="settings-card">
+        <h3>Azure Video Indexer</h3>
+        <p>Use this service to analyze video, extract frames, and decode text detected in video content.</p>
+      </div>
+      <div class="settings-card">
+        <h3>Azure Computer Vision</h3>
+        <p>Use Computer Vision for OCR on extracted frames and images.</p>
+      </div>
+      <div class="settings-card">
+        <h3>Azure Document Intelligence</h3>
+        <p>Use prebuilt invoice and receipt models to extract structured transaction data.</p>
+      </div>
+      <div class="settings-card">
+        <h3>Azure OpenAI</h3>
+        <p>Use OpenAI to normalize free-form text into a common JSON schema.</p>
+      </div>
+    </div>
+  </section>

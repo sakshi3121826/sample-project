@@ -1,0 +1,9 @@
+Flask>=2.3
+pandas>=2.0
+openpyxl>=3.1
+werkzeug>=3.0
+# Optional Azure SDKs for production use:
+# azure-ai-formrecognizer>=4.0.0b5
+# azure-ai-vision>=1.0.0
+# azure-ai-textanalytics>=5.10.0
+# azure-identity>=1.16.0

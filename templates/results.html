@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section>
+    <h1>Extraction results</h1>
+    {% if result %}
+      <pre class="result-json">{{ result | tojson(indent=2) }}</pre>
+    {% else %}
+      <div class="empty-state">
+        <p>No results yet. Use the upload pages to send data through the extractor.</p>
+      </div>
+    {% endif %}
+  </section>

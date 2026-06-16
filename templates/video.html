@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section>
+    <h1>Video extraction</h1>
+    <p>Upload a video file and the backend will prepare it for Azure analysis.</p>
+    <form action="{{ url_for('api_process_video') }}" method="post" enctype="multipart/form-data" class="form-card">
+      <label>Choose a video</label>
+      <input type="file" name="file" accept="video/*" required />
+      <button class="button" type="submit">Analyze video</button>
+    </form>
+    <div class="info-block">
+      <h3>Azure recommendation</h3>
+      <p>Use <strong>Azure Video Indexer</strong> or <strong>Azure AI Video Analyzer</strong> for speech transcription, frame text extraction, and object detection.</p>
+    </div>
+  </section>
+{% endblock %}
